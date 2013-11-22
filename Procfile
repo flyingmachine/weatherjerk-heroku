@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/weatherjerk-standalone.jar
+web: java $JVM_OPTS -jar target/weatherjerk-standalone.jar
