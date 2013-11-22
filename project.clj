@@ -39,9 +39,5 @@
                                :html-paths ["html-app"
                                             "../html-app/app"
                                             "../html-app/.tmp"]}}}}
-
-  :mirrors {"central" {:name "Internal nexus"
-                       :url "http://nexus.intranet.mckinsey.com/content/groups/public/"
-                       :repo-manager true}}
   
   :main weatherjerk.server)
