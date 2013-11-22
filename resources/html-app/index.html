@@ -1,0 +1,62 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>weatherjerk</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/52c5c918.main.css">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body ng-app="weatherjerkApp">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="components/es5-shim/es5-shim.js"></script>
+        <script src="components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div id="masthead">
+      <div class="container">
+        Weather Jerk
+      </div>
+    </div>
+    <div id="main" class="container" ng-controller="FoundationCtrl">
+      <div class="unit">
+        <ul>
+          <li>
+            <label ng-class="{selected: settings.unit=='f'}">
+              <input type="radio" ng-model="settings.unit" value="f">
+              Fahrenheit
+            </label>
+          </li>
+          <li>
+            <label ng-class="{selected: settings.unit=='c'}">
+              <input type="radio" ng-model="settings.unit" value="c">
+              Celsius
+            </label>
+          </li>
+        </ul>
+      </div>
+      <ng-view></ng-view>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-cookies.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-sanitize.min.js"></script>
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/lodash/dist/lodash.min.js"></script>
+    <script src="components/moment/moment.js"></script>
+    
+    <script src="scripts/7f1293f3.scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+{395 {:desc "Moderate or heavy snow in area with thunder"
+      :keys [:snow :thunder]}
+ 392 {:desc "Patchy light snow in area with thunder"
+      :keys [:snow :thunder]}
+ 389 {:desc "Moderate or heavy rain in area with thunder"
+      :keys [:thunder]}
+ 386 {:desc "Patchy light rain in area with thunder"
+      :keys [:thunder]}
+ 377 {:desc "Moderate or heavy showers of ice pellets"
+      :keys [:hail]}
+ 374 {:desc "Light showers of ice pellets"
+      :keys [:hail]}
+ 371 {:desc "Moderate or heavy snow showers"
+      :keys [:snow]}
+ 368 {:desc "Light snow showers"
+      :keys [:snow]}
+ 365 {:desc "Moderate or heavy sleet showers"
+      :keys [:sleet]}
+ 362 {:desc "Light sleet showers"
+      :keys [:sleet]}
+ 359 {:desc "Torrential rain shower"
+      :keys [:rainy]}
+ 356 {:desc "Moderate or heavy rain shower"
+      :keys [:rainy]}
+ 353 {:desc "Light rain shower"
+      :keys [:rainy]}
+ 350 {:desc "Ice pellets"
+      :keys [:hail]}
+ 338 {:desc "Heavy snow"
+      :keys [:snow]}
+ 335 {:desc "Patchy heavy snow"
+      :keys [:snow]}
+ 332 {:desc "Moderate snow"
+      :keys [:snow]}
+ 329 {:desc "Patchy moderate snow"
+      :keys [:snow]}
+ 326 {:desc "Light snow"
+      :keys [:snow]}
+ 323 {:desc "Patchy light snow"
+      :keys [:snow]}
+ 320 {:desc "Moderate or heavy sleet"
+      :keys [:sleet]}
+ 317 {:desc "Light sleet"
+      :keys [:sleet]}
+ 314 {:desc "Moderate or Heavy freezing rain"
+      :keys [:sleet]}
+ 311 {:desc "Light freezing rain"
+      :keys [:sleet]}
+ 308 {:desc "Heavy rain"
+      :keys [:rainy]}
+ 305 {:desc "Heavy rain at times"
+      :keys [:rainy]}
+ 302 {:desc "Moderate rain"
+      :keys [:rainy]}
+ 299 {:desc "Moderate rain at times"
+      :keys [:rainy]}
+ 296 {:desc "Light rain"
+      :keys [:rainy]}
+ 293 {:desc "Patchy light rain"
+      :keys [:rainy]}
+ 284 {:desc "Heavy freezing drizzle"
+      :keys [:drizzle]}
+ 281 {:desc "Freezing drizzle"
+      :keys [:drizzle]}
+ 266 {:desc "Light drizzle"
+      :keys [:drizzle]}
+ 263 {:desc "Patchy light drizzle"
+      :keys [:drizzle]}
+ 260 {:desc "Freezing fog"
+      :keys [:misty]}
+ 248 {:desc "Fog"
+      :keys [:misty]}
+ 230 {:desc "Blizzard"
+      :keys [:snow]}
+ 227 {:desc "Blowing snow"
+      :keys [:snow]}
+ 200 {:desc "Thundery outbreaks in nearby"
+      :keys [:thunder]}
+ 185 {:desc "Patchy freezing drizzle nearby"
+      :keys [:drizzle]}
+ 182 {:desc "Patchy sleet nearby"
+      :keys [:sleet]}
+ 179 {:desc "Patchy snow nearby"
+      :keys [:snow]}
+ 176 {:desc "Patchy rain nearby"
+      :keys [:rainy]}
+ 143 {:desc "Mist"
+      :keys [:misty]}
+ 122 {:desc "Overcast"
+      :keys [:cloudy]}
+ 119 {:desc "Cloudy"
+      :keys [:cloudy]}
+ 116 {:desc "Partly Cloudy"
+      :keys [:partly-cloudy]}
+ 113 {:desc "Clear/Sunny"
+      :keys [:clear]}}
