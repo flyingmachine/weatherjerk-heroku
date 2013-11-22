@@ -49,3 +49,7 @@
       
       (create (index :forecasts [:location])))
   (down [] (drop (table :forecasts))))
+
+(defn up
+  []
+  (migrate))

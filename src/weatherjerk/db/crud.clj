@@ -19,15 +19,16 @@
   (delete entity
           (where (str->int conditions :id))))
 
-(defn by-id
-  [entity id]
-  (one entity {:id id}))
-
 (defn one
   [entity conditions]
   (first (-> (select* entity)
              (where conditions)
              (select))))
+
+(defn by-id
+  [entity id]
+  (one entity {:id id}))
+
 
 (defmacro all
   [entity & clauses]

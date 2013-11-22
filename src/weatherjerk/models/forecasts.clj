@@ -17,6 +17,9 @@
        (where "age(created_on) < interval '1 hour'")
        (select))))
 
+(defn kstr
+  [& args]
+  (keyword (apply str args)))
 
 (defn date->str
   [date]
