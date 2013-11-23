@@ -35,7 +35,7 @@
                   {(kstr "weather_code_" n1) (:code forecast)
                    (kstr "temp_max_c_" n1) (str->int (:c (:high temp)))
                    (kstr "temp_min_c_" n1) (str->int (:c (:low temp)))
-                   (kstr "date_" n1) (to-sql-date (from-string (:date forecast)))}))
+                   (kstr "date_" n1) (to-sql-date (t/from-time-zone (from-string (:date forecast)) (t/default-time-zone)))}))
               (range num))))
 
 (defn c->f
