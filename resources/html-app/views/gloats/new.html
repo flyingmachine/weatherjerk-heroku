@@ -11,23 +11,15 @@
 </div>
 <div ng-controller="ForecastsCtrl" class="forecast">
   <h2>Your Awesome Forecast</h2>
-  <form ng-submit="getForecastData('gloater')">
-    <div>
-      <input type="text" ng-model="forecast" placeholder="Your zip or city"/>
-      <input type="submit" />
-    </div>
-    <activity status="status"></activity>
-    <forecast data="forecasts.gloater"></forecast>
-  </form>
+  <forecast-form forecasts="forecasts"
+                 which="gloater"
+                 placeholder="Your zip or city"></forecast-form>
+  <forecast data="forecasts.gloater"></forecast>
 </div>
 <div ng-controller="ForecastsCtrl" class="forecast">
   <h2>Some Poor Slob's Forecast</h2>
-  <form ng-submit="getForecastData('poorSlob')">
-    <div>
-      <input type="text" ng-model="forecast" placeholder="Some poor slob's zip or city" />
-      <input type="submit" />
-    </div>
-    <activity status="status"></activity>
-    <forecast data="forecasts.poorSlob"></forecast>
-  </form>
+  <forecast-form forecasts="forecasts"
+                 which="poorSlob"
+                 placeholder="Some poor slob's zip or city"></forecast-form>
+  <forecast data="forecasts.poorSlob"></forecast>
 </div>

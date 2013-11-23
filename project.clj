@@ -36,9 +36,9 @@
                                     :user "daniel"
                                     :password ""
                                     :host "localhost"}
-                               :html-paths ["html-app"
-                                            "../html-app/app"
-                                            "../html-app/.tmp"]}}}
+                               :html-paths ["../html-app/app"
+                                            "../html-app/.tmp"
+                                            "html-app"]}}}
              :uberjar {:env {:app {:html-paths ["html-app"]}}}}
   
   :main weatherjerk.server)

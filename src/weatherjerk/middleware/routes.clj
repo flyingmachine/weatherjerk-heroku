@@ -11,15 +11,16 @@
 (defroutes routes
   ;; Serve up angular app
   (apply compojure.core/routes
-         (map (fn [response-fn]
-                (GET "/" [] (response-fn "index.html" {:root "html-app"})))
-              [resp/file-response resp/resource-response]))
+         (map #(compojure.core/routes
+                (GET "/" [] (compojure.route/files "index.html" {:root %}))
+                (GET "/" [] (compojure.route/resources "index.html" {:root %})))
+              (config :app :html-paths)))
   
   (apply compojure.core/routes
          (map #(compojure.core/routes
                 (compojure.route/files "/" {:root %})
                 (compojure.route/resources "/" {:root %}))
-              (reverse (config :app :html-paths))))
+              (config :app :html-paths)))
   
     
   ;; Forecasts
